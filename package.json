@@ -1,0 +1,9 @@
+{
+  "name": "single-use-weakmap",
+  "version": "0.0.0",
+  "description": "A WeakMap that deletes its values once accessed",
+  "main": "./lib/index.js",
+  "repository": "https://github.com/handlebauer/single-use-weakmap.git",
+  "author": "Donald Geddes <hi@donaldgeddes.ca>",
+  "license": "MIT"
+}
