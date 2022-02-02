@@ -2,6 +2,7 @@
   "name": "single-use-weakmap",
   "version": "0.3.0",
   "description": "A WeakMap that deletes its values once accessed",
+  "type": "module",
   "main": "./lib/index.cjs",
   "module": "./lib/index.js",
   "exports": {
