@@ -2,7 +2,12 @@
   "name": "single-use-weakmap",
   "version": "0.2.0",
   "description": "A WeakMap that deletes its values once accessed",
-  "main": "./lib/index.js",
+  "main": "./lib/index.cjs",
+  "module": "./lib/index.js",
+  "exports": {
+    "require": "./lib/index.cjs",
+    "import": "./lib/index.js"
+  },
   "repository": "https://github.com/handlebauer/single-use-weakmap.git",
   "author": "Donald Geddes <hi@donaldgeddes.ca>",
   "license": "MIT",
@@ -10,10 +15,15 @@
   "eslintConfig": {
     "extends": "@hbauer/eslint-config"
   },
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
   "devDependencies": {
     "@hbauer/eslint-config": "^1.2.1",
     "@hbauer/prettier-config": "^1.1.0",
     "eslint": "^8.8.0",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "rollup": "^2.66.1"
   }
 }
